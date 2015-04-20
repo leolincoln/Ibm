@@ -7,7 +7,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
-public class MyReducer extends Reducer<Text, DoubleWritable, Text, DoubleWritable> {
+public class MyReducer_bak extends Reducer<Text, DoubleWritable, Text, DoubleWritable> {
 
 	public void reduce(Text text, Iterable<DoubleWritable> values, Context context)
 			throws IOException, InterruptedException {

@@ -8,7 +8,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class MyMapper extends Mapper<Object, Text, Text, DoubleWritable> {
+public class MyMapper_bak extends Mapper<Object, Text, Text, DoubleWritable> {
 
 //	private final IntWritable ONE = new IntWritable(1);
 	private Text word = new Text();
@@ -27,7 +27,7 @@ public class MyMapper extends Mapper<Object, Text, Text, DoubleWritable> {
 
 		
 		word.set(id);
-		four.set(Double.parseDouble(data[4]));
+		four.set(Double.parseDouble(data[3]));
 		context.write(word, four);
 
 	}
